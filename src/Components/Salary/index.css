@@ -1,0 +1,12 @@
+.form-salary{
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+.salary-details{
+   width: 20%;
+    /* border: 1px solid black; */
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    flex-wrap: wrap;
+
+}

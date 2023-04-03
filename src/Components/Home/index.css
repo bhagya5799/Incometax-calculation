@@ -1,0 +1,51 @@
+.home {
+  height: 100dvh;
+  width: 100dvw;
+  background-color: rgb(255, 255, 255);
+}
+.tax-calculation {
+  padding: 10px;
+
+  opacity: 10;
+  /* padding-left: 10px; */
+}
+.calculation-body {
+  display: flex;
+  /* gap: 10px; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.calculate-btn {
+  height: 2rem;
+  width: 10rem;
+  text-align: center;
+  background-color: rgb(52, 52, 207);
+  color: white;
+  border-radius: 4px;
+  border-width: 0;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+}
+.child-div {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 8px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.result-card{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+
+
+}
+.result-card{
+    display: flex;
+}
