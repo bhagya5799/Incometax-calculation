@@ -17,8 +17,9 @@ const Salary = ({ getSalaries }) => {
     useEffect(() =>{
         getSalaries({ salary: salary, houseRent: houseRent, SpecialAllowance: SpecialAllowance, 
             transportAllowance: transportAllowance, otherAllowance: otherAllowance, leaveTravelAllowance
-                : leaveTravelAllowance, Reimbursements: Reimbursements, Contribution
-                : Contribution, incomeTaxDeducted
+                : leaveTravelAllowance, Reimbursements: Reimbursements, 
+                Contribution: Contribution, 
+                incomeTaxDeducted
                 : incomeTaxDeducted
                 })
     }, [salary, houseRent, SpecialAllowance, transportAllowance, otherAllowance, leaveTravelAllowance, Reimbursements

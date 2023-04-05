@@ -8,8 +8,8 @@ const PersonDetails = ({ setPersonalDetails }) => {
   const [status, setStatus] = useState('')
 
   useEffect(() => {
-    setPersonalDetails({ name: name, date: date, gender: gender, status: status })
-  }, [name, date, gender, status])
+    setPersonalDetails({ name:name, date:date, gender:gender, status:status })
+  }, [name, date, gender, status, setPersonalDetails])
 
   return (
     <div className='person-details'>

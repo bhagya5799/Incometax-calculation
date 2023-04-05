@@ -70,6 +70,7 @@ const Home = () => {
             + parseInt(getDeductions.PrincipalRepaymentonHomeLoan)
             + parseInt(getDeductions.ChildrensTuitionFees)
         console.log('deduction', sumDeductions)
+        // let taxbleIncome = grossTotalIncome
         let taxbleIncome = grossTotalIncome - undersectionDedection - sumDeductions
 
 

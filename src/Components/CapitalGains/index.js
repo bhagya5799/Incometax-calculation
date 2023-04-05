@@ -18,7 +18,6 @@ const CapitalGains = ({ setCapitalGains }) => {
                 <label htmlFor='Long-Term'>Long-Term Capital Gains</label>
                 <input type="number" id="Long-Term" placeholder='Long-Term Capital Gains' value={longTerm}
                     onChange={(e) => setLongTerm(e.target.value)} />
-
             </form>
         </div>
     )

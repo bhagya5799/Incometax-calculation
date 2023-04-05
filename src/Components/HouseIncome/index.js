@@ -15,10 +15,10 @@ const HouseIncome = ({ setHouseIncome }) => {
     useEffect(() => {
         setHouseIncome({
             grossAnnual: grossAnnual, municipalTaxes: municipalTaxes,
-            standardDeduction: standardDeductionAMount, interestPaid: interestPaid
+            standardDeduction: standardDeduction, interestPaid: interestPaid, standardDeductionAMount: standardDeductionAMount
         })
    
-    }, [grossAnnual, municipalTaxes, standardDeduction, interestPaid])
+    }, [grossAnnual, municipalTaxes, standardDeduction, interestPaid,setHouseIncome])
    
     return (
         <div className='House-income'>
