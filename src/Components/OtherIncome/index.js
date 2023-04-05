@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react'
 import './index.css'
 
 const OtherIncome = ({ setOtherIncomeData }) => {
-    const [interestIncome, setInterestIncome]=useState('')
-    const [dividendIncome, setDividendIncome]=useState('')
-    const [BusinessIncome, setBusinessIncome]=useState('')
-    const [agriculturalIncome, setAgriculturalIncome] = useState('')
-    const [miscellaneousIncome, setMiscellaneousIncome] = useState('')
+    const [interestIncome, setInterestIncome]=useState(0)
+    const [dividendIncome, setDividendIncome]=useState(0)
+    const [BusinessIncome, setBusinessIncome]=useState(0)
+    const [agriculturalIncome, setAgriculturalIncome] = useState(0)
+    const [miscellaneousIncome, setMiscellaneousIncome] = useState(0)
+    console.log(interestIncome)
 
     useEffect(() => {
         setOtherIncomeData({ interestIncome: interestIncome, dividendIncome: dividendIncome, 
@@ -16,7 +17,7 @@ const OtherIncome = ({ setOtherIncomeData }) => {
 
     return (
         <div className='otherIncome-details'>
-            <h4 className='person-details-title'>Other Income Details</h4>
+            <h3 className='person-details-title'>Other Income Details</h3>
             <form >
                 <label htmlFor='Savings'>Interest Income (Savings Account, Fixed Deposits, etc.)</label>
                 <input type="text" id="Savings" placeholder='Interest Income' value={interestIncome}

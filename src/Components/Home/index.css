@@ -2,16 +2,22 @@
   height: 100dvh;
   width: 100dvw;
   background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  
 }
 .tax-calculation {
   padding: 10px;
-
   opacity: 10;
-  /* padding-left: 10px; */
+  text-align: center;
+  width: 90%;
+  padding: 20px;
+
+}
+.main-title {
+  text-align: center;
 }
 .calculation-body {
   display: flex;
-  /* gap: 10px; */
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -24,6 +30,7 @@
   color: white;
   border-radius: 4px;
   border-width: 0;
+  cursor: pointer;
 }
 
 .btn-div {
@@ -32,20 +39,69 @@
 }
 .child-div {
   display: flex;
-  flex-direction: column;
-  width: 20%;
+  gap: 30px;
+  width: 70%;
+
   padding: 8px 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.result-card{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-    padding: 10px;
-
-
+.result-card {
+  display: flex;
+  justify-content: center;
+ 
+  align-items: center;
+  padding: 10px;
 }
-.result-card{
-    display: flex;
+.result-card {
+  display: flex;
+  border: 1px solid gray;
+  box-shadow: rgba(7, 7, 7, 0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.show-personal-details {
+  justify-content: space-around;
+  width: 350px;
+  font-weight: bold;
+}
+.show-income-tax-details {
+  border: 1px solid white;
+  justify-content: space-around;
+  width: 400px;
+  padding: 10px;
+}
+.show-income-tax-details > p {
+  background-color: rgb(64, 63, 63);
+  color: rgb(255, 252, 252);
+  padding: 10px;
+}
+.type-title {
+  text-align: center;
+}
+.clickPersonalbtn {
+  background-color: rgb(54, 25, 196);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border-width: 0;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+  
+}
+
+.tax-components {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+.square {
+  font-size: 25px;
+  color: blue;
+  cursor: pointer;
 }
